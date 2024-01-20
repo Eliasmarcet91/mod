@@ -52,5 +52,3 @@ with page2:
     st.write("What is CyberSecurity?")
 with page3:
     st.write("Introduction to Linux.")
-    
-
