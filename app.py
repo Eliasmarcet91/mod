@@ -52,5 +52,5 @@ with page1:
     
 with page2:
     st.write("CyberSecurity.")
-with page3;
+with page3:
     st.write("Introduction to Linux.")
