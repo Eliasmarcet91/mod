@@ -48,8 +48,12 @@ if st.button('Moderate'):
 page1, page2, page3 = st.tabs(['Cloud Adoption', 'CyberSecurity', 'Linux'])
 with page1:
     st.write("Steps for a successful Cloud Adoption.")
+    st.write("Visit the link below")
+    st.write("https://tech101s.com/2020/05/31/what-is-cloud-computing/")   
 with page2:
     st.write("What is CyberSecurity?")
+    st.write("Visit the link below")
+    st.write("https://tech101s.com/2020/05/31/lets-talk-about-cybersecurity/")   
 with page3:
     st.write("Introduction to Linux.")
     st.write("Visit the link below")
