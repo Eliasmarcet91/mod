@@ -59,7 +59,7 @@ with page3:
 
 
 #add a map in the page
-map_df = pd.DataFrame({'lat': [25.866397], 'lon': [-80.319232]})
+map_df = pd.DataFrame({'lat': [25.776667], 'lon': [-80.195377]})
 st.map(map_df)
 
 
