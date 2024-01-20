@@ -43,3 +43,11 @@ if st.button('Moderate'):
 #add a map in the page
 map_df = pd.DataFrame({'lat': [40.3573], 'lon': [-74.6672]})
 st.map(map_df)
+
+
+#add tabs to the UI
+page1, page2, page3 = st.tabs(['Cloud Adoption', 'Page 2', 'Page 3'])
+with page1:
+    st.write("Steps for a successful Cloud Adoption.")
+    
+with page2:
