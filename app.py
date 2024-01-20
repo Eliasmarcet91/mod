@@ -41,8 +41,8 @@ if st.button('Moderate'):
     st.json(json_output)
 
 #add a map in the page
-map_df = pd.DataFrame({'lat': [40.3573], 'lon': [-74.6672]})
-st.map(map_df)
+"""map_df = pd.DataFrame({'lat': [40.3573], 'lon': [-74.6672]})
+st.map(map_df)""" #not working error on streamlit.io
 
 
 #add tabs to the UI
