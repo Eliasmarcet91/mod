@@ -56,3 +56,10 @@ with page2:
     st.write("What is CyberSecurity?")
 with page3:
     st.write("Introduction to Linux.")
+
+
+
+
+
+if 'user_selection' not in st.session_state:
+    st.session_state['user_selection'] = default_selection
