@@ -1,6 +1,7 @@
 import streamlit as st
 from openai import OpenAI
 import json
+import pandas as pd
 
 # Function to serialize the output
 def serialize(obj):
