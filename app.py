@@ -46,8 +46,11 @@ st.map(map_df)
 
 
 #add tabs to the UI
-page1, page2, page3 = st.tabs(['Cloud Adoption', 'Page 2', 'Page 3'])
+page1, page2, page3 = st.tabs(['Cloud Adoption', 'CyberSecurity', 'Introduction to Linux'])
 with page1:
     st.write("Steps for a successful Cloud Adoption.")
     
 with page2:
+    st.write("CyberSecurity.")
+with page3;
+    st.write("Introduction to Linux.")
