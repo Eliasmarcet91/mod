@@ -55,5 +55,5 @@ with page3:
     image = Image.open('https://i.etsystatic.com/21812990/r/il/1b6940/2314861823/il_fullxfull.2314861823_gvzf.jpg')
     st.image(image, caption='Its all about the penguin')
     
-image = Image.open('https://i.etsystatic.com/21812990/r/il/1b6940/2314861823/il_fullxfull.2314861823_gvzf.jpg')
-st.image(image, caption='All bald men have a big forehead')
+#image = Image.open('https://i.etsystatic.com/21812990/r/il/1b6940/2314861823/il_fullxfull.2314861823_gvzf.jpg')
+#st.image(image, caption='All bald men have a big forehead')
