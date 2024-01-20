@@ -60,10 +60,10 @@ map_df = pd.DataFrame({'lat': [25.776667], 'lon': [-80.195377]})
 st.map(map_df)
 
 
-#add an image to the UI
-from PIL import Image
+#add an image to the UI NEED TO WORK ON IT
+"""from PIL import Image
 image = Image.open('https://ernesto.net/wp-content/uploads/2021/01/1N1A0005.jpg')
-st.image(image, caption='All bald men have a big forehead')
+st.image(image, caption='All bald men have a big forehead')"""
 
 
 
