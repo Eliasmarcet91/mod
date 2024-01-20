@@ -55,15 +55,10 @@ with page3:
     st.write("Visit the link below")
     st.write("https://tech101s.com/2020/07/21/linux/")
 
-
 #add a map in the page
 map_df = pd.DataFrame({'lat': [25.776667], 'lon': [-80.195377]})
 st.map(map_df)
 
-
-#maintain user session
-if 'user_selection' not in st.session_state:
-    st.session_state['user_selection'] = default_selection
 
 #add an image to the UI
 from PIL import Image
