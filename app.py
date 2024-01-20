@@ -45,15 +45,16 @@ if st.button('Moderate'):
 
 
 #add tabs to the UI
-page1, page2, page3 = st.tabs(['Cloud Adoption', 'CyberSecurity', 'Linux'])
-with page1:
-    st.write("Steps for a successful Cloud Adoption.")
-with page2:
-    st.write("What is CyberSecurity?")
-with page3:
-    st.write("Introduction to Linux.")
-    image = Image.open('https://i.etsystatic.com/21812990/r/il/1b6940/2314861823/il_fullxfull.2314861823_gvzf.jpg')
-    st.image(image, caption='Its all about the penguin')
+def pages():
+    page1, page2, page3 = st.tabs(['Cloud Adoption', 'CyberSecurity', 'Linux'])
+    with page1:
+        st.write("Steps for a successful Cloud Adoption.")
+    with page2:
+        st.write("What is CyberSecurity?")
+    with page3:
+        st.write("Introduction to Linux.")
+        image = Image.open('https://i.etsystatic.com/21812990/r/il/1b6940/2314861823/il_fullxfull.2314861823_gvzf.jpg')
+        st.image(image, caption='Its all about the penguin')
     
 #image = Image.open('https://i.etsystatic.com/21812990/r/il/1b6940/2314861823/il_fullxfull.2314861823_gvzf.jpg')
 #st.image(image, caption='All bald men have a big forehead')
