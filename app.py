@@ -39,3 +39,7 @@ if st.button('Moderate'):
     serialized_output = serialize(output)
     json_output = json.dumps(serialized_output, indent=2, ensure_ascii=False)
     st.json(json_output)
+
+#add a map in the page
+map_df = pd.DataFrame({'lat': [40.3573], 'lon': [-74.6672]})
+st.map(map_df)
