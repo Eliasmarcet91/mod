@@ -41,7 +41,8 @@ if st.button('Moderate'):
     st.json(json_output)
 
 #add a map in the page
-
+map_df = pd.DataFrame({'lat': [25.866397], 'lon': [-80.319232]})
+st.map(map_df)
 
 #add tabs to the UI
 
