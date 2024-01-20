@@ -32,6 +32,11 @@ st.title('''Elias Marcet Moderator application - CAI 2300C Introduction to Natur
 
 user_input = st.text_area("Enter text to moderate")
 
+
+#add a map in the page
+map_df = pd.DataFrame({'lat': [25.866397], 'lon': [-80.319232]})
+st.map(map_df)
+
 #create a button
 if st.button('Moderate'):
     response = client.moderations.create(input=user_input)
@@ -40,9 +45,6 @@ if st.button('Moderate'):
     json_output = json.dumps(serialized_output, indent=2, ensure_ascii=False)
     st.json(json_output)
 
-#add a map in the page
-map_df = pd.DataFrame({'lat': [25.866397], 'lon': [-80.319232]})
-st.map(map_df)
 
 #add tabs to the UI
 
