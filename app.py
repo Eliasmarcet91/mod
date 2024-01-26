@@ -63,6 +63,6 @@ with page3:
 map_df = pd.DataFrame({'lat': [25.776667], 'lon': [-80.195377]})
 st.map(map_df)
 
-st.data_editor(data, num_rows="dynamic")
+#st.data_editor(data, num_rows="dynamic")
 uploaded_files = st.file_uploader("Upload files", type=["pdf", "doc", "txt"], accept_multiple_files=True)
 
