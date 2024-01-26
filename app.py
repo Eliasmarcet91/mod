@@ -63,4 +63,5 @@ with page3:
 map_df = pd.DataFrame({'lat': [25.776667], 'lon': [-80.195377]})
 st.map(map_df)
 
+st.data_editor(data, num_rows="dynamic")
 
