@@ -66,8 +66,11 @@ uploaded_files = st.file_uploader("Upload files", type=["pdf", "doc", "txt"], ac
 
 
 # color
-# .streamlit/config.toml
+.streamlit/config.toml
 [theme]
 primaryColor = "#4a0000"
 backgroundColor = "#fff2db"
 textColor = "ffffff"
+
+if 'user_selection' not in st.session_state:
+    st.session_state['user_selection'] = default_selection
