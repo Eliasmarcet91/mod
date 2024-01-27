@@ -70,4 +70,4 @@ uploaded_files = st.file_uploader("Upload files", type=["pdf", "doc", "txt"], ac
 [theme]
 primaryColor = "#4a0000"
 backgroundColor = "#fff2db"
-textColor = "#262730"
+textColor = "ffffff"
