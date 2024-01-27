@@ -2,6 +2,18 @@ import streamlit as st
 from openai import OpenAI
 import json
 import pandas as pd
+
+
+
+# color
+.streamlit/config.toml
+[theme]
+primaryColor = "#4a0000"
+backgroundColor = "#fff2db"
+textColor = "ffffff"
+
+
+
 # Function to serialize the output
 def serialize(obj):
     """Recursively walk object's hierarchy."""
@@ -58,19 +70,15 @@ with page3:
     st.write("Visit the link below")
     st.write("https://tech101s.com/2020/07/21/linux/")
 
+
+
+uploaded_files = st.file_uploader("Upload files", type=["pdf", "doc", "txt"], accept_multiple_files=True)
+
 #add a map in the page
 map_df = pd.DataFrame({'lat': [25.776667], 'lon': [-80.195377]})
 st.map(map_df)
 
-uploaded_files = st.file_uploader("Upload files", type=["pdf", "doc", "txt"], accept_multiple_files=True)
 
-
-# color
-.streamlit/config.toml
-[theme]
-primaryColor = "#4a0000"
-backgroundColor = "#fff2db"
-textColor = "ffffff"
 
 if 'user_selection' not in st.session_state:
     st.session_state['user_selection'] = default_selection
