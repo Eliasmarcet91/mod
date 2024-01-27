@@ -67,5 +67,5 @@ uploaded_files = st.file_uploader("Upload files", type=["pdf", "doc", "txt"], ac
 map_df = pd.DataFrame({'lat': [25.776667], 'lon': [-80.195377]})
 st.map(map_df)
 
-if 'user_selection' not in st.session_state:
-    st.session_state['user_selection'] = default_selection
+'''if 'user_selection' not in st.session_state:
+    st.session_state['user_selection'] = default_selection'''
