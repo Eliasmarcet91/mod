@@ -69,5 +69,5 @@ uploaded_files = st.file_uploader("Upload files", type=["pdf", "doc", "txt"], ac
 # .streamlit/config.toml
 [theme]
 primaryColor = "#4a0000"
-backgroundColor = "#ffffff"
+backgroundColor = "#fff2db"
 textColor = "#262730"
