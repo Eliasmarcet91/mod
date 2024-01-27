@@ -67,8 +67,4 @@ uploaded_files = st.file_uploader("Upload files", type=["pdf", "doc", "txt"], ac
 map_df = pd.DataFrame({'lat': [25.776667], 'lon': [-80.195377]})
 st.map(map_df)
 
-[theme]
-primaryColor = "#f63366"
-backgroundColor = "#ffffff"
-textColor = "#262730"
 
