@@ -28,20 +28,9 @@ api_key = st.secrets["openai_secret"]
 # Initialize the OpenAI client with the API key from secrets
 client = OpenAI(api_key=api_key)
 
+
 # Streamlit UI components
 st.title('''Elias Marcet Moderator application - CAI 2300C Introduction to Natural Language Processing at Miami Dade College - WORK IN PROGRESS - Hate Speech Detection''')
-
-user_input = st.text_area("Enter text to moderate")
-
-
-#create a button
-if st.button('Moderate'):
-    response = client.moderations.create(input=user_input)
-    output = response.results[0]
-    serialized_output = serialize(output)
-    json_output = json.dumps(serialized_output, indent=2, ensure_ascii=False)
-    st.json(json_output)
-    
 
 
 #add tabs to the UI
@@ -59,6 +48,21 @@ with page3:
     st.write("Visit the link below")
     st.write("https://tech101s.com/2020/07/21/linux/")
 
+user_input = st.text_area("Enter text to moderate")
+
+
+#create a button
+if st.button('Moderate'):
+    response = client.moderations.create(input=user_input)
+    output = response.results[0]
+    serialized_output = serialize(output)
+    json_output = json.dumps(serialized_output, indent=2, ensure_ascii=False)
+    st.json(json_output)
+    
+
+
+
+
 
 
 uploaded_files = st.file_uploader("Upload files", type=["pdf", "doc", "txt"], accept_multiple_files=True)
@@ -67,5 +71,4 @@ uploaded_files = st.file_uploader("Upload files", type=["pdf", "doc", "txt"], ac
 map_df = pd.DataFrame({'lat': [25.776667], 'lon': [-80.195377]})
 st.map(map_df)
 
-'''if 'user_selection' not in st.session_state:
-    st.session_state['user_selection'] = default_selection'''
+
