@@ -2,7 +2,6 @@ import streamlit as st
 from openai import OpenAI
 import json
 import pandas as pd
-
 # Function to serialize the output
 def serialize(obj):
     """Recursively walk object's hierarchy."""
@@ -65,3 +64,10 @@ st.map(map_df)
 
 uploaded_files = st.file_uploader("Upload files", type=["pdf", "doc", "txt"], accept_multiple_files=True)
 
+
+# color
+# .streamlit/config.toml
+[theme]
+primaryColor = "#4a0000"
+backgroundColor = "#ffffff"
+textColor = "#262730"
