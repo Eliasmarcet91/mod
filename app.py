@@ -44,8 +44,6 @@ if st.button('Moderate'):
     st.json(json_output)
     
 
-uploaded_files = st.file_uploader("Upload files", type=["pdf", "doc", "txt"], accept_multiple_files=True)
-
 
 #add tabs to the UI
 page1, page2, page3 = st.tabs(['Cloud Adoption', 'CyberSecurity', 'Linux'])
@@ -63,7 +61,7 @@ with page3:
     st.write("https://tech101s.com/2020/07/21/linux/")
 
 
-
+uploaded_files = st.file_uploader("Upload files", type=["pdf", "doc", "txt"], accept_multiple_files=True)
 
 #add a map in the page
 map_df = pd.DataFrame({'lat': [25.776667], 'lon': [-80.195377]})
